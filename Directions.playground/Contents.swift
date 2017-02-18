@@ -9,10 +9,10 @@ func playerDidMove(_ direction: String) {
     }
 }
 
-playerDidMove("up")
-playerDidMove("left")
-playerDidMove("dwn")
-playerDidMove("Up")
+playerDidMove("up")     // Player moved up
+playerDidMove("left")   // Player moved left
+playerDidMove("dwn")    // Oops! That direction doesn't make sense: dwn
+playerDidMove("Up")     // Oops! That direction doesn't make sense: Up
 
 
 
@@ -46,8 +46,7 @@ func playerDidMove(_ direction: Direction) {
     print("Player moved \(direction.excited)")
 }
 
-playerDidMove(direction1)
-playerDidMove(direction2)
-playerDidMove(direction3)
-
-playerDidMove(.left)
+playerDidMove(direction1)   // Player moved UP
+playerDidMove(direction2)   // Player moved DOWN
+playerDidMove(direction3)   // Player moved RIGHT
+playerDidMove(.left)        // Player moved LEFT
